@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sellers.SellersLoginActivity"
+    android:background="@drawable/back0">
+
+    <TextView
+        android:id="@+id/title_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Satıcı Giriş Formu"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="50dp"
+
+        />
+
+    <EditText
+        android:id="@+id/seller_login_emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="E-mail.."
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:layout_marginTop="470dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:drawableEnd="@drawable/ic_email_black_24dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/seller_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_login_emailAddress"
+        android:hint="Şifre.."
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:drawableEnd="@drawable/ic_lock_white_24dp"/>
+
+    <Button
+        android:id="@+id/seller_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_login_password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:text="Giriş Yap"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@drawable/bg_button_white"/>
+
+</RelativeLayout>

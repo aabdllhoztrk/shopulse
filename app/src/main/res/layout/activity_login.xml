@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/back0">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="Shopulse"
+        android:textColor="#ffff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold|italic"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout2"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffff"
+        android:layout_below="@+id/txt"
+        android:theme="@style/myEditTextStyle"
+
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_phone_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_email_phone_white_24dp"
+        android:hint="Telefon Numarasi"
+        android:textColor="#ffff"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="270dp"
+        android:theme="@style/myEditTextStyle"
+        android:maxLength="11"
+        android:inputType="number"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout1"
+        android:theme="@style/myEditTextStyle"
+        android:layout_marginTop="370dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/txt"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_lock_white_24dp"
+        android:hint="Parola"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="320dp"
+        android:theme="@style/myEditTextStyle"
+        android:inputType="textPassword"
+        />
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_password_input"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/remember_me_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="Beni Hatırla"
+            android:textColor="@android:color/white"
+            app:cbd_strokeColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            />
+
+        <TextView
+            android:id="@+id/forget_password_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şifremi Unuttum"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="80dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_button_white"
+        android:layout_below="@id/linear_layout_1"
+
+        />
+    <TextView
+        android:id="@+id/admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Giriş"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/login_btn"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/not_admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Değilim"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/login_btn"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="25dp"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

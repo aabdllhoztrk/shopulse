@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C234D</color>
+    <color name="colorPrimaryDark">#1C234D</color>
+    <color name="colorAccent">#1C234D</color>
+
+    <color name="overlayBackground">#7F132835</color>
+    <color name="overlayActionBar">#1C234D</color>
+
+    <color name="colorBkgd">#343434</color>
+    <color name="colorEdt">#1C234D</color>
+    <color name="colorReg">#f5b716</color>
+
+
+
+</resources>
